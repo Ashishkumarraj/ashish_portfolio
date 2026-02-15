@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Ashish Portfolio - Web Developer + UX Designer. Modern, premium, responsive personal portfolio website.">
+  <meta name="keywords" content="Portfolio, Web Developer, UX Designer, Ashish, HTML, CSS, JavaScript">
+  <meta name="author" content="Ashish">
+  <title>Ashish Portfolio | Web Developer + UX Designer</title>
+  <!-- Google Fonts: Poppins & Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Sticky Navbar -->
+  <header id="navbar" class="navbar">
+    <nav class="container nav-content">
+      <a href="#" class="logo">Ashish</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <!-- Removed dark mode toggle from header -->
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Ashish Kumar</h1>
+        <h2>Full Stack Developer </h2>
+        <p>I build robust, scalable web systems engineered for performance and reliability.
+Committed to clean code, thoughtful design, and delivering impactful digital solutions.</p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Hire Me</a>
+          <a href="#" class="btn btn-secondary" download>Download CV</a>
+        </div>
+        <div class="social-icons">
+          <a href="#" aria-label="LinkedIn"><img src="assets/linkedin.svg" alt="LinkedIn"></a>
+          <a href="#" aria-label="GitHub"><img src="./assets/github.svg" alt="GitHub"></a>
+          <a href="#" aria-label="Twitter"><img src="assets/twitter.svg" alt="Twitter"></a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <img src="./assets/ashu.jpg" alt="Ashish Profile Photo" class="profile-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="container stats-content">
+      <div class="stat-card">
+        <h3>2+</h3>
+        <p>Years Experience</p>
+      </div>
+      <div class="stat-card">
+        <h3>6+</h3>
+        <p>Projects</p>
+      </div>
+      <div class="stat-card">
+        <h3>9+</h3>
+        <p>Clients</p>
+      </div>
+      <div class="stat-card">
+        <h3>1</h3>
+        <p>Awards</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <h2 class="section-title">Services</h2>
+      <div class="accordion" id="servicesAccordion">
+        <div class="accordion-item">
+          <button class="accordion-header">Frontend Development</button>
+          <div class="accordion-body">
+            <p>Building responsive and interactive user interfaces with modern web technologies.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">Backend Development</button>
+          <div class="accordion-body">
+            <p>Developing secure, scalable server-side systems and business logic.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">App Design (UI/UX)</button>
+          <div class="accordion-body">
+            <p>Designing intuitive and visually engaging user experiences for web and mobile.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">Deployment & Cloud Hosting</button>
+          <div class="accordion-body">
+            <p>Deploying applications efficiently with reliable cloud infrastructure</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">Responsive Web Design</button>
+          <div class="accordion-body">
+            <p>Ensuring seamless performance across all devices and screen sizes.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">API Development & Integration</button>
+          <div class="accordion-body">
+            <p>Creating and integrating robust APIs for smooth data communication.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent Works Section -->
+  <section id="works" class="works-section">
+    <div class="container">
+      <h2 class="section-title">Recent Works</h2>
+      <div class="works-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="app">App</button>
+        <button class="filter-btn" data-filter="branding">Branding</button>
+      </div>
+      <div class="works-grid" id="worksGrid">
+        <div class="work-card" data-category="web">
+          <img src="assets/work1.png" alt="Project 1" class="work-img">
+          <div class="work-info">
+            <h3>Modern Web App</h3>
+            <p>Responsive web application with premium UI/UX.</p>
+          </div>
+        </div>
+        <div class="work-card" data-category="app">
+          <img src="assets/work2.png" alt="Project 2" class="work-img">
+          <div class="work-info">
+            <h3>Mobile App Design</h3>
+            <p>Intuitive and beautiful mobile app interface.</p>
+          </div>
+        </div>
+        <div class="work-card" data-category="branding">
+          <img src="assets/work3.png" alt="Project 3" class="work-img">
+          <div class="work-info">
+            <h3>Brand Identity</h3>
+            <p>Unique branding for a modern startup.</p>
+          </div>
+        </div>
+        <div class="work-card" data-category="web">
+          <img src="assets/work4.png" alt="Project 4" class="work-img">
+          <div class="work-info">
+            <h3>Portfolio Website</h3>
+            <p>Personal portfolio with glassmorphism and animations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section id="timeline" class="timeline-section">
+    <div class="container timeline-content">
+      <div class="timeline-column">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline-item">
+          <span class="timeline-date">2026 - Present</span>
+          <h3> Web Developer</h3>
+          <p>Leading web projects and UX design for top clients.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">2021 - 2023</span>
+          <h3>Frontend Developer</h3>
+          <p>Developed interactive UIs and improved user experience.</p>
+        </div>
+      </div>
+      <div class="timeline-column">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline-item">
+          <span class="timeline-date">2017 - 2021</span>
+          <h3>Bachelor of Technology</h3>
+          <p>Major in Computer Science, University Name.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">2015 - 2017</span>
+          <h3>High School</h3>
+          <p>Science Stream, School Name.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-list skills-grid">
+        <div class="skill-bar" data-skill="HTML">
+          <span class="skill-title">HTML</span>
+          <div class="progress-bar">
+            <span class="progress" data-progress="95"></span>
+            <span class="progress-percent">0%</span>
+          </div>
+        </div>
+        <div class="skill-bar" data-skill="CSS">
+          <span class="skill-title">CSS</span>
+          <div class="progress-bar">
+            <span class="progress" data-progress="92"></span>
+            <span class="progress-percent">0%</span>
+          </div>
+        </div>
+        <div class="skill-bar" data-skill="JavaScript">
+          <span class="skill-title">JavaScript</span>
+          <div class="progress-bar">
+            <span class="progress" data-progress="90"></span>
+            <span class="progress-percent">0%</span>
+          </div>
+        </div>
+        <div class="skill-bar" data-skill="UI/UX">
+          <span class="skill-title">UI/UX</span>
+          <div class="progress-bar">
+            <span class="progress" data-progress="88"></span>
+            <span class="progress-percent">0%</span>
+          </div>
+        </div>
+        <div class="skill-bar" data-skill="Figma">
+          <span class="skill-title">Figma</span>
+          <div class="progress-bar">
+            <span class="progress" data-progress="85"></span>
+            <span class="progress-percent">0%</span>
+          </div>
+        </div>
+        <div class="skill-bar" data-skill="React Basics">
+          <span class="skill-title">React Basics</span>
+          <div class="progress-bar">
+            <span class="progress" data-progress="80"></span>
+            <span class="progress-percent">0%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Floating dark mode toggle button -->
+    <button id="darkSlideToggle" class="dark-slide-toggle" aria-label="Toggle dark slide">
+      <img src="assets/moon.svg" alt="Dark Slide" id="darkSlideIcon">
+    </button>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials-section">
+    <div class="container">
+      <h2 class="section-title">Testimonials</h2>
+      <div class="testimonials-slider" id="testimonialsSlider">
+        <div class="testimonial-card">
+          <p>“Ashish delivered a stunning website that exceeded our expectations. Highly recommended!”</p>
+          <span class="testimonial-author">— Client A</span>
+        </div>
+        <div class="testimonial-card">
+          <p>“Professional, creative, and always on time. The best designer we’ve worked with.”</p>
+          <span class="testimonial-author">— Client B</span>
+        </div>
+        <div class="testimonial-card">
+          <p>“Amazing attention to detail and user experience. Our users love the new design!”</p>
+          <span class="testimonial-author">— Client C</span>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button class="slider-btn prev" aria-label="Previous testimonial">&#8592;</button>
+        <button class="slider-btn next" aria-label="Next testimonial">&#8594;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="blog-section">
+    <div class="container">
+      <h2 class="section-title">Latest Blog</h2>
+      <div class="blog-grid">
+        <div class="blog-card">
+          <img src="assets/blog1.png" alt="Blog 1" class="blog-img">
+          <div class="blog-info">
+            <h3>Designing with Glassmorphism</h3>
+            <p>Tips and tricks for using glassmorphism in modern web design.</p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img src="assets/blog2.png" alt="Blog 2" class="blog-img">
+          <div class="blog-info">
+            <h3>UX for Developers</h3>
+            <p>How developers can improve user experience in their projects.</p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img src="assets/blog3.png" alt="Blog 3" class="blog-img">
+          <div class="blog-info">
+            <h3>Responsive Design in 2026</h3>
+            <p>Best practices for building responsive websites in 2026 and beyond.</p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+  <div class="container">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact-details-row" style="display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap;">
+      <div class="contact-details">
+        <p><strong>Email:</strong> <a href="mailto:ashish@email.com">ashish@email.com</a></p>
+        <p><strong>Contact Number:</strong> <a href="tel:+911234567890">+91 12345 67890</a></p>
+      </div>
+      <div class="contact-social-icons" style="display: flex; gap: 1.2rem;">
+        <a href="https://instagram.com/" target="_blank" aria-label="Instagram"><img src="assets/instagram.svg" alt="Instagram" style="width:32px;height:32px;"></a>
+        <a href="https://wa.me/911234567890" target="_blank" aria-label="WhatsApp"><img src="assets/whatsapp.svg" alt="WhatsApp" style="width:32px;height:32px;"></a>
+        <a href="https://t.me/username" target="_blank" aria-label="Telegram"><img src="assets/telegram.svg" alt="Telegram" style="width:32px;height:32px;"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Ashish. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
